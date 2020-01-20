@@ -1,0 +1,13 @@
+4 bcd,adc,abd,acb
+5 bcde,aedc,abd,acbe,adb
+5 bcd,ade,aed,aceb,bdc
+6 bcdef,afec,abed,ace,adcbf,aeb
+6 bcd,aec,abefd,acf,bfc,ced
+6 bcde,aefc,abfd,acfe,adfb,bedc
+7 bcdef,afgc,abgd,acge,adgf,aegb,bfedc
+7 bcde,aefgc,abgd,acge,adgfb,beg,bfedc
+8 bcdef,afegc,abghd,achge,adgbf,aeb,bedhc,cgd
+8 bcde,aefgc,abghd,achfe,adfb,bedhg,bfhc,cgfd
+9 bcde,aefgc,abghd,achie,adifb,beihg,bfhc,cgfid,dhfe
+10 bcde,aefgc,abghd,achie,adifb,beijg,bfjhc,cgjid,dhjfe,fihg
+12 bcdef,afghc,abhid,acije,adjkf,aekgb,bfklh,bglic,chljd,dilke,ejlgf,gkjih

@@ -1,0 +1,30 @@
+0	0	6	0	0	0	|	6	8	0	0
+6 bcde,aefc,abfd,acfe,adfb,bedc
+0	8	0	0	0	0	|	8	8	2	0
+8 bcde,aefg,aghd,ache,adfb,behg,bfhc,cgfd
+0	6	0	3	0	0	|	9	8	3	0
+9 bcde,aefg,aghd,acie,adib,bihg,bfhc,cgfi,dhfe
+10	0	0	0	0	0	|	10	10	0	2
+10 bcde,aefg,ahid,acie,adfb,bejg,bfjh,cgji,chjd,fihg
+0	4	0	6	0	0	|	10	8	4	0
+10 bcde,afgh,ahid,acje,adjf,bejg,bfih,bgic,chgj,dife
+0	0	2	8	0	0	|	10	8	4	0
+10 bcde,afgh,ahid,acie,adif,bejg,bfjh,bgjc,cjed,fihg
+0	2	0	9	0	0	|	11	8	5	0
+11 bcde,aefg,aghd,acij,ajkb,bkhg,bfhc,cgfi,dhkj,dike,ejif
+4	2	0	0	6	0	|	12	10	2	2
+12 bcde,aefg,ahij,ajke,adfb,belg,bflh,cgli,chkj,cikd,djil,fkhg
+0	0	0	12	0	0	|	12	8	6	0
+12 bcde,aefg,aghi,aije,adkb,bklg,bfhc,cgli,chjd,dilk,ejlf,fkjh
+0	0	0	12	0	0	|	12	8	6	0
+12 bcde,aefg,aghd,acij,ajkb,bklg,bfhc,cgli,dhlj,dike,ejlf,fkih
+3	1	0	2	7	0	|	13	10	3	2
+13 bcde,aefg,ahij,ajke,adfb,belg,bflh,cgmi,chmj,cikd,djml,fkmg,hlki
+0	2	1	0	10	0	|	13	10	3	2
+13 bcde,aefc,abgd,achi,aijb,bklg,cflm,dmji,dhje,eihk,fjml,fkmg,glkh
+2	0	0	4	8	0	|	14	10	4	2
+14 bcde,aefg,ahij,ajke,adfb,belg,bfmh,cgmi,chnj,cikd,djnl,fknm,glnh,imlk
+0	2	0	2	10	0	|	14	10	4	2
+14 bcde,aefg,ahij,ajke,adkb,bklg,bfmh,cgmi,chnj,cind,dlfe,fknm,glnh,imlj
+0	0	0	5	10	0	|	15	10	5	2
+15 bcde,aefg,ahid,acjk,aklb,blmg,bfnh,cgni,choj,diok,djle,ekmf,flon,gmoh,inmj

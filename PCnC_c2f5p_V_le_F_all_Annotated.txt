@@ -1,0 +1,13 @@
+4 bcd,adc,abd,acb		// regular tetrahedron, self-dual
+5 bcde,aedc,abd,acbe,adb	// J12(3-gonal bipyramid)
+5 bcd,ade,aed,aceb,bdc		// 4-gonal pyramid, self-dual
+6 bcdef,afec,abed,ace,adcbf,aeb	// biaugmented tetrahedron
+6 bcd,aec,abefd,acf,bfc,ced	// 5-gonal pyramid, self-dual
+6 bcde,aefc,abfd,acfe,adfb,bedc	// 4-gonal bipyarmid
+7 bcdef,afgc,abgd,acge,adgf,aegb,bfedc // J13(5-gonal bipyramid)
+7 bcde,aefgc,abgd,acge,adgfb,beg,bfedc // augmented octahedron
+8 bcdef,afegc,abghd,achge,adgbf,aeb,bedhc,cgd // J84(snub disphenoid)
+8 bcde,aefgc,abghd,achfe,adfb,bedhg,bfhc,cgfd // put 2 tetrahedra on 2 adjacent faces of octahedron, and the joint the apexes of the two tetrahedra
+9 bcde,aefgc,abghd,achie,adifb,beihg,bfhc,cgfid,dhfe // J51(triaugmented triangular prism)
+10 bcde,aefgc,abghd,achie,adifb,beijg,bfjhc,cgjid,dhjfe,fihg // J17(Gyroelongated square dipyramid)
+12 bcdef,afghc,abhid,acije,adjkf,aekgb,bfklh,bglic,chljd,dilke,ejlgf,gkjih // regular icosahedron

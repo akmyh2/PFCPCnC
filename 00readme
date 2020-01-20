@@ -1,0 +1,167 @@
+###################################################################################################################
+#                                                                                                                 #
+#                                                                                                                 #
+#                                                             README                                              #
+#                                                                                                                 #
+#      ENUMERATION OF SIMPLE, CONNECTED, PLANAR, POSITIVE CORNER CURVATURE EVERYWHERE GRAPHS, AND                 #
+#      ENUMERATION OF SIMPLE, CONNECTED, PLANAR GRAPHS WITH EACH EDGE HAVING POSITIVE FORMAN CURVATURE,           #
+#      BY USING MATLAB.                                                                                           #
+#                                                                                                                 #
+#      Written by Yohji Akama when he visited Math. Dept., Fudan University on 2019/11/28                         #
+#                                                                                                                 #
+###################################################################################################################
+
+
+READ:
+
+PCnC_c2f5p_V_le_F_all_Annotated.txt : The enumeration of all the 13 2-connected simple spherical planar graphs (V,E,F) such that
+				the corner curvature is positive everywhere and #V <= #F. This is manually written.
+			    
+
+PFC_c2dq_all.txt : The enumeration of all the 72 connected simple planar 4-regular graphs
+		   such that the number of vertices is v, Forman curvature is positive everywhere,
+		   and the vertex type is 3335,3334,3333,3344, or 3345. (6 <= v <= 24).
+
+
+PCnC.mw : A Maple worksheet that proves: If the corner curvature is positive for every corner, then the number of vertices or the number of faces is at most 12
+
+
+#########################################################################################################################################
+#                                                                                                                                       #
+#                     SIMPLE, CONNECTED, PLANAR, POSITIVE CORNER CURVATURE EVERYWHERE GRAPHS                                            #
+#                                                                                                                                       #
+#########################################################################################################################################
+
+PCnCvtx_13-16.txt : The outputs of PCnCvtx 13; PCnCvtx 14; PCnCvtx 15; PCnCvtx 16
+
+PCnC_c2f5p_AdjLists_V_le_F : In this folder, a file c2f5p_PCnC_v (4 <= v <= 12) contains all the adjacency lists of PCnC graphs of designated
+		        number of vertices.
+
+PCnC_c2f5p_V_le_F_all_Annotated.txt : The enumeration of all the 13 2-connected simple spherical planar graphs (V,E,F) such that
+				the corner curvature is positive everywhere and #V <= #F. This is manually written.
+			    
+PCnC_c2f5p_V_le_F_all.txt : The enumeration of adjacency lists in c2f5p_PCnC_v (4 <= v <= 12).
+
+PCnCvtx.c      : For a given number v of vertices, lists possible combinations of graph invariants of PCnC graphs (V,E,F) such that v = #V <= #F.
+                The comment of this files contains DEFINITION, LEMMA, and EXAMPLE which dispense the computation by plantriPCnC for
+		v-vertex cases (v >= 13).
+		
+plantriPCnC.c : For a given number v of vertices, generates connected simple spherical planar graphs (V,E,F) s.t. the corner curvature is positive
+	        everywhere and #V <= #F.
+
+
+
+
+#########################################################################################################################################
+#                                                                                                                                       #
+#                     SIMPLE, CONNECTED, PLANAR GRAPHS WITH EACH EDGE HAVING POSITIVE FORMAN CURVATURE                                  #
+#                                                                                                                                       #
+#########################################################################################################################################
+
+
+InverseMeridian-fig :
+This directory consists of all 116 MATLAB-fig files 
+(a) E<# of edges of G>_<count>V<# of vertices of G>Selfdual.fig,
+(b) E<# of edges of G>_<count>V<# of vertices of G>.fig, 
+(c) E<# of edges of G>_<count>V<# of vertices of G>dual.fig.
+such that
+(1) G is a simple, connected, planar, graph where
+    <# edges of G>  is the number of edges of G, and is >=6 and <= 24;
+    <# vertices of G>  is the number of vertices of G;
+    and each edge has positive Forman curvature.
+(2) <COUNT> is the numbering among such H=m(G).
+    The numbering changes for nonisomorphic H's.
+(3) (a) is for self-dual G.  (b) and (c) are for non-self-dual, and are dual to each other.
+
+
+
+Meridian-fig :
+This directory consists of all 73 files <# vertices of H>_<COUNT>.fig such that
+(1) H is a simple, connected, planar, 4-regular graph
+    where <# vertices of H> is the number of vertices of H, and is >=6 and <= 24;
+    and each vertex type sums up to at most 15.
+(2) <COUNT> is the numbering among such H where the number of vertices of H is <# vertices of H>.
+    The numbering changes for nonisomorphic H's.
+Each file is an MATLAB-fig file to draw H.
+
+
+MeridianPFC_c2dq_all.txt :
+This file consists of 73 adjacency lists.
+They represent all the 73 connected simple planar 4-regular graphs H such that
+(i) the number v of vertices is >=6 and <=24 and (ii) each vertex type sums up to at most 15. 
+The enumeration is ordered with v.
+
+
+InverseMeridian :
+This directory consists of all the 73 files <# vertices of H>_<COUNT>.txt such that
+(1) H is a simple, connected, planar, 4-regular graph
+    where the number of vertices of H is <# vertices of H>, and is >=6 and <= 24;
+    and each vertex type sums up to at most 15.
+(2) <COUNT> is the numbering among such H where the number of vertices of H is <# vertices of H>.
+    The numbering changes for nonisomorphic H's.
+Each file consists of an inverse meridian graph G of H and the dual of G.
+
+
+
+
+PFC.res		 :
+The output of PFCvtx, lexicographically ordered with n3335,n3334,n3333,n3344,n3345,n3444,n3336. Some candidates are given.
+		   
+PFCs.vtx	 :
+The output of PFCvtx, ordered with v. Some candidates are given.
+
+PFCs.3gon	 :
+The output of PFCvtx, ordered with f3. Some candidates are given.
+
+PFCs.4gon	 :
+The output of PFCvtx, ordered with f4. Some candidates are given.
+
+PFCs.5gon	 :
+The output of PFCvtx, ordered with f5. Some candidates are given.
+
+
+plantriMeridianPFC.c :
+For a given number v of vertices,  generates connected simple spherical planar quadrangulations of v vertices such that
+the vertex type of the dual graph are 3335,3334,3333,3344,3345, or 3336. 
+For each graph, it generates also an inverse meridian graphs and the dual. It does not check whether they are isomorphic or not.
+For detail, invoke plantriMeridianPFC --help.
+
+
+
+#########################################################################################################################################
+#                                                                                                                                       #
+#                                              Miscellaneous                                                                            #
+#                                                                                                                                       #
+#########################################################################################################################################
+
+
+00readme :
+This file.
+
+makefile :
+For make command
+
+
+InverseMeridianISO.m :
+A MATLAB files that verifies the 116 graphs in InverseMeridian-fig are indeed mutuall non-isomorphic.
+
+
+InverseMeridian.m :
+From 73 files in InverseMeridian, this MATLAB files  generates the 116 MATLAB-fig files in InverseMeridian-fig.
+
+
+
+
+Meridian.m :
+From MeridianPFC_c2dq_all.txt, this MATLAB files generates the 73 MATLAB-fig files in Meridian-fig.
+
+
+translate.cpp :
+From stdin, it reads two adjacency lists of ASCII format. To stdout, it writes the following MATLAB-commands: if the two adjacency lists are for isomorphic graphs, then generates PDF/MATLAB-fig file of the graph; otherwise, generates PDF/MATLAB-fig files of the two graphs.
+For detail, invoke translate --help.
+
+
+translateISO.cpp :
+From stdin, it reads two adjacency lists of ASCII format. To stdout, it writes MATLAB-commands that asign the two adjacency matrix to two variables. For detail, invoke translateISO --help
+
+

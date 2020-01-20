@@ -1,0 +1,146 @@
+0	0	6	0	0	0	0	|	6	8	0	0	0
+6 bcde,aefc,abfd,acfe,adfb,bedc
+0	8	0	0	0	0	0	|	8	8	2	0	0
+8 bcde,aefg,aghd,ache,adfb,behg,bfhc,cgfd
+0	6	0	3	0	0	0	|	9	8	3	0	0
+9 bcde,aefg,aghd,acie,adib,bihg,bfhc,cgfi,dhfe
+10	0	0	0	0	0	0	|	10	10	0	2	0
+10 bcde,aefg,ahid,acie,adfb,bejg,bfjh,cgji,chjd,fihg
+0	4	0	6	0	0	0	|	10	8	4	0	0
+10 bcde,afgh,ahid,acje,adjf,bejg,bfih,bgic,chgj,dife
+0	0	2	8	0	0	0	|	10	8	4	0	0
+10 bcde,afgh,ahid,acie,adif,bejg,bfjh,bgjc,cjed,fihg
+3	3	0	2	2	1	0	|	11	9	3	1	0
+11 bcde,aefg,ahid,acij,ajfb,bekg,bfkh,cgki,chjd,dike,fjhg
+0	2	0	9	0	0	0	|	11	8	5	0	0
+11 bcde,aefg,aghd,acij,ajkb,bkhg,bfhc,cgfi,dhkj,dike,ejif
+0	0	0	0	0	0	12	|	12	12	0	0	2
+12 bcde,aefg,ahid,acie,adfb,bejg,bfjk,ckli,chld,flkg,gjlh,hkji
+4	2	0	0	6	0	0	|	12	10	2	2	0
+12 bcde,aefg,ahij,ajke,adfb,belg,bflh,cgli,chkj,cikd,djil,fkhg
+0	2	0	8	0	2	0	|	12	8	6	0	0
+12 bcde,aefc,abgh,ahij,ajfb,bekg,cfkl,clid,dhlj,dike,fjlg,gkih
+0	6	0	0	0	6	0	|	12	8	6	0	0
+12 bcde,afgh,ahid,acij,ajkf,bekg,bfkl,blic,chjd,dile,elgf,gkjh
+0	4	0	4	0	4	0	|	12	8	6	0	0
+12 bcde,aefc,abgd,acgh,ahib,bijg,cfkd,dkle,eljf,filk,gjlh,hkji
+0	0	0	12	0	0	0	|	12	8	6	0	0
+12 bcde,aefg,aghi,aije,adkb,bklg,bfhc,cgli,chjd,dilk,ejlf,fkjh
+0	0	0	12	0	0	0	|	12	8	6	0	0
+12 bcde,aefg,aghd,acij,ajkb,bklg,bfhc,cgli,dhlj,dike,ejlf,fkih
+2	2	0	4	3	1	0	|	12	9	4	1	0
+12 bcde,aefg,ahid,acij,ajfb,bekg,bfkh,cgli,chld,dlke,fjlg,hkji
+1	2	1	2	4	2	0	|	12	9	4	1	0
+12 bcde,aefg,ahij,ajke,adfb,bekg,bfkh,cgli,chlj,cild,dlgf,hkji
+3	1	0	2	7	0	0	|	13	10	3	2	0
+13 bcde,aefg,ahij,ajke,adfb,belg,bflh,cgmi,chmj,cikd,djml,fkmg,hlki
+0	0	0	11	0	2	0	|	13	8	7	0	0
+13 bcde,afgc,abhi,aije,adkf,bekg,bflh,cglm,cmjd,dimk,ejlf,gkmh,hlji
+1	2	0	4	4	2	0	|	13	9	5	1	0
+13 bcde,aefc,abgh,ahie,adjb,bjkl,clmh,cgmd,dmkj,eikf,fjil,fkmg,glih
+2	0	0	7	3	1	0	|	13	9	5	1	0
+13 bcde,aefg,aghi,aije,adjb,bklg,bflc,clmi,chmd,dmke,fjml,fkhg,hkji
+0	2	1	0	10	0	0	|	13	10	3	2	0
+13 bcde,aefc,abgd,achi,aijb,bklg,cflm,dmji,dhje,eihk,fjml,fkmg,glkh
+0	2	0	7	0	4	0	|	13	8	7	0	0
+13 bcde,afgc,abhi,aije,adjf,bekg,bflh,cglm,cmjd,dike,fjml,gkmh,hlki
+1	2	0	4	4	2	0	|	13	9	5	1	0
+13 bcde,aefc,abgh,ahie,adib,bjkg,cfkl,clmd,dmje,fimk,fjlg,gkmh,hlji
+2	0	0	4	8	0	0	|	14	10	4	2	0
+14 bcde,aefg,ahij,ajke,adfb,belg,bfmh,cgmi,chnj,cikd,djnl,fknm,glnh,imlk
+1	0	0	7	4	2	0	|	14	9	6	1	0
+14 bcde,afgc,abhi,aije,adkf,bekg,bflm,cmni,chnd,dnlk,ejlf,gkjm,glnh,hmji
+0	1	0	8	0	5	0	|	14	8	8	0	0
+14 bcde,aefc,abgh,ahij,ajkb,bklg,cflm,cmid,dhnj,dike,ejnf,fnmg,glnh,imlk
+0	2	0	6	0	6	0	|	14	8	8	0	0
+14 bcde,aefc,abgh,ahij,ajfb,bekg,cflm,cmid,dhnj,dike,fjnl,gknm,glnh,imlk
+1	0	0	7	4	2	0	|	14	9	6	1	0
+14 bcde,aefg,aghd,acij,ajfb,bekl,blhc,cgmi,dhnj,dine,fnml,fkmg,hlkn,imkj
+0	2	0	6	0	6	0	|	14	8	8	0	0
+14 bcde,afgc,abgd,achi,aijf,bejk,bkhc,dgli,dhme,emnf,fnlg,hknm,ilnj,jmlk
+0	0	0	10	0	4	0	|	14	8	8	0	0
+14 bcde,aefg,aghi,aije,adkb,bklg,bflc,clmi,chmd,dmnk,ejnf,fnhg,hnji,jmlk
+0	2	0	4	5	3	0	|	14	9	6	1	0
+14 bcde,aefg,ahij,ajke,adlb,blmg,bfmh,cgni,chnj,cikd,djnl,ekmf,flng,hmki
+0	2	0	2	10	0	0	|	14	10	4	2	0
+14 bcde,aefg,ahij,ajke,adkb,bklg,bfmh,cgmi,chnj,cind,dlfe,fknm,glnh,imlj
+0	0	0	10	0	4	0	|	14	8	8	0	0
+14 bcde,afgc,abhi,aije,adjf,bekg,bflh,cglm,cmnd,dnke,fjnl,gkmh,hlni,imkj
+0	0	0	9	0	6	0	|	15	8	9	0	0
+15 bcde,afgc,abgh,ahie,adjf,bejk,bklc,clmd,dmnj,einf,fnog,gomh,hloi,iokj,knml
+0	1	0	7	0	7	0	|	15	8	9	0	0
+15 bcde,afgc,abhi,aije,adkf,bekg,bflh,cgmn,cnod,dolk,ejlf,gkjm,hlon,hmoi,inmj
+0	1	0	7	0	7	0	|	15	8	9	0	0
+15 bcde,aefg,aghd,acij,ajfb,bekl,blhc,cgmi,dhnj,dike,fjno,fomg,hlon,imok,knml
+1	0	0	4	9	1	0	|	15	10	5	2	0
+15 bcde,afgc,abhd,acij,ajkf,bekg,bflh,cglm,dmnj,dine,enof,gomh,hloi,iokj,knml
+1	0	0	6	4	4	0	|	15	9	7	1	0
+15 bcde,afgc,abhd,achi,aijf,bekg,bflm,cmnd,dnje,eiok,fjol,gkom,glnh,hmoi,jnlk
+0	1	0	5	5	4	0	|	15	9	7	1	0
+15 bcde,aefg,aghi,aije,adkb,blmg,bfhc,cgmi,chnd,dnok,ejol,fkom,flnh,imoj,jnlk
+0	0	0	7	5	3	0	|	15	9	7	1	0
+15 bcde,aefc,abgh,ahij,ajkb,blmg,cfmh,cgnd,dnoj,dike,ejol,fkom,flng,hmoi,inlk
+0	0	0	5	10	0	0	|	15	10	5	2	0
+15 bcde,aefg,ahid,acjk,aklb,blmg,bfnh,cgni,choj,diok,djle,ekmf,flon,gmoh,inmj
+0	0	0	8	0	8	0	|	16	8	10	0	0
+16 bcde,afgc,abhi,aije,adkf,bekg,bflh,cgmn,cnod,dopk,ejlf,gkpm,hlpn,hmoi,inpj,joml
+0	1	0	4	5	6	0	|	16	9	8	1	0
+16 bcde,aefg,aghi,aijk,akfb,belm,bmhc,cgni,chjd,diok,djle,fkop,fpng,hmpo,jnpl,lonm
+0	0	0	8	0	8	0	|	16	8	10	0	0
+16 bcde,afgc,abhd,acij,ajkf,bekl,blmh,cgmi,dhmn,dnke,ejof,fopg,gpih,ipoj,knpl,lonm
+0	0	0	8	0	8	0	|	16	8	10	0	0
+16 bcde,aefg,aghi,aije,adkb,bklm,bmhc,cgni,chod,dopk,ejpf,fpnm,flng,hmlo,inpj,jolk
+0	0	0	4	10	2	0	|	16	10	6	2	0
+16 bcde,aefc,abgh,ahij,aklb,blmn,cnoh,cgid,dhoj,dipk,ejpl,ekmf,flpn,fmog,gnpi,jomk
+0	0	0	8	0	8	0	|	16	8	10	0	0
+16 bcde,aefc,abgh,ahij,ajkb,bklg,cfmn,cnid,dhno,dope,eplf,fkpm,glon,gmih,impj,jolk
+0	0	0	8	0	8	0	|	16	8	10	0	0
+16 bcde,afgh,ahij,ajke,adlf,belm,bmnh,bgic,chnj,ciod,dopl,ekpf,fpng,gmoi,jnpk,koml
+0	0	0	6	5	5	0	|	16	9	8	1	0
+16 bcde,aefg,aghd,acij,aklb,blmg,bfhc,cgmi,dhnj,diok,ejol,ekpf,fpnh,impo,jnpk,lonm
+0	0	0	8	0	8	0	|	16	8	10	0	0
+16 bcde,afgc,abhi,aijk,aklf,belg,bfmh,cgni,chjd,dino,dope,epmf,glpn,hmoj,jnpk,koml
+0	0	0	7	0	10	0	|	17	8	11	0	0
+17 bcde,aefc,abgh,ahij,ajkb,bklg,cfmh,cgnd,dnoj,dipe,eplf,fkqm,glqn,hmoi,inqp,joqk,lpom
+0	0	0	7	0	10	0	|	17	8	11	0	0
+17 bcde,aefc,abgh,ahij,ajkb,bklg,cfmn,cnod,dopj,dipe,eplf,fkqm,glqn,gmoh,hnqi,iqkj,lpom
+0	0	0	7	0	10	0	|	17	8	11	0	0
+17 bcde,afgh,ahij,ajke,adlf,belg,bfmn,bnoc,copj,cipd,dpml,ekmf,glkq,gqoh,hnqi,iqkj,mpon
+0	0	0	5	5	7	0	|	17	9	9	1	0
+17 bcde,aefg,aghi,aijk,akfb,belm,bmnc,cnoi,chjd,dipk,djle,fkpq,fqng,gmoh,hnqp,joql,lpom
+0	0	0	6	0	12	0	|	18	8	12	0	0
+18 bcde,afgc,abhi,aije,adkf,belg,bfmh,cgmn,cnod,dopk,ejql,fkqm,glrh,hroi,inpj,jorq,kprl,mqpn
+0	0	0	6	0	12	0	|	18	8	12	0	0
+18 bcde,aefg,aghi,aijk,akfb,belm,bmhc,cgno,cojd,diop,dple,fkpq,fqng,hmqr,hrji,jrlk,lrnm,nqpo
+0	0	0	6	0	12	0	|	18	8	12	0	0
+18 bcde,aefg,aghi,aijk,aklb,blmn,bnhc,cgop,cpjd,diqr,drle,ekrf,frqn,fmog,hnqp,hoqi,jpom,jmlk
+0	0	0	6	0	12	0	|	18	8	12	0	0
+18 bcde,afgc,abhi,aijk,aklf,belg,bfmh,cgmn,cnjd,diop,dpqe,eqmf,glrh,hroi,jnrp,joqk,kprl,mqon
+0	0	0	6	0	12	0	|	18	8	12	0	0
+18 bcde,afgc,abhi,aijk,aklf,belg,bfmh,cgmn,cnod,dopk,djqe,eqmf,glrh,hroi,inpj,jorq,kprl,mqpn
+0	0	0	6	0	12	0	|	18	8	12	0	0
+18 bcde,aefg,aghi,aije,adkb,bklm,bmhc,cgno,copd,dpqk,ejqf,fqrm,flng,hmro,hnpi,iorj,jrlk,lqpn
+0	0	0	4	5	9	0	|	18	9	10	1	0
+18 bcde,afgc,abhi,aijk,aklf,belg,bfmh,cgmn,cnjd,dino,dope,epqf,gqrh,hrji,jrpk,koql,lprm,mqon
+0	0	0	4	5	9	0	|	18	9	10	1	0
+18 bcde,afgh,ahij,ajke,adlf,belg,bfmn,bnoc,copj,cipd,dpql,ekmf,glqr,groh,hnri,iqkj,kprm,mqon
+0	0	0	5	0	14	0	|	19	8	13	0	0
+19 bcde,aefg,aghi,aijk,akfb,belm,bmhc,cgno,copd,dpqk,djle,fkqr,frng,hmrs,hspi,iosj,jsrl,lqnm,nqpo
+0	0	0	5	0	14	0	|	19	8	13	0	0
+19 bcde,afgc,abhi,aije,adkf,bekl,blmh,cgmn,cnod,dopk,ejqf,fqrg,grsh,hsoi,inpj,josq,kprl,lqsm,mrpn
+0	0	0	3	5	11	0	|	19	9	11	1	0
+19 bcde,afgh,ahij,ajke,adlf,belm,bmnh,bgoc,copj,cikd,djpq,eqrf,frng,gmso,hnsi,isqk,kprl,lqsm,nrpo
+0	0	0	4	0	16	0	|	20	8	14	0	0
+20 bcde,afgh,ahid,acjk,aklf,belm,bmnh,bgoc,copj,dipq,dqre,ermf,flsg,gsto,hnpi,iotj,jtrk,kqsl,mrtn,nsqp
+0	0	0	0	10	10	0	|	20	10	10	2	0
+20 bcde,afgc,abhi,aijk,aklf,bemg,bfno,copi,chqd,dqrk,djle,eksm,flsn,gmto,gnph,hotq,iprj,jqts,lrtm,nsrp
+0	0	0	4	0	16	0	|	20	8	14	0	0
+20 bcde,afgh,ahij,ajke,adlf,belm,bmnh,bgoc,copj,ciqd,dqrl,eksf,fsng,gmto,hnpi,iotq,jprk,kqts,lrtm,nsrp
+0	0	0	3	0	18	0	|	21	8	15	0	0
+21 bcde,aefg,aghi,aijk,aklb,blmn,bnhc,cgop,cpjd,diqr,drle,eksf,fstn,fmog,hntp,hoqi,jptu,jusk,lrum,muqo,qtsr
+0	0	0	2	0	20	0	|	22	8	16	0	0
+22 bcde,afgh,ahij,ajke,adlf,bemg,bfno,boic,chpq,cqkd,djrl,eksm,flsn,gmtu,guph,iouv,ivrj,kqvs,lrtm,nsvu,ntpo,ptrq
+0	0	0	0	0	24	0	|	24	8	18	0	0
+24 bcde,aefg,aghi,aijk,aklb,blmn,bnhc,cgop,cpqd,dqrk,djse,esmf,fltu,fuog,hnuv,hvqi,ipwj,jwts,krtl,msrx,mxon,oxwp,qvxr,twvu
+0	0	0	0	0	24	0	|	24	8	18	0	0
+24 bcde,afgc,abhi,aijk,aklf,belm,bmnh,cgop,cpjd,diqr,drse,estf,ftng,gmuo,hnvp,hoqi,jpvw,jwsk,krxl,lxum,ntxv,ouwq,qvxr,swut
