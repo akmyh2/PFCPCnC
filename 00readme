@@ -8,33 +8,29 @@
 #      BY USING MATLAB.                                                                                           #
 #                                                                                                                 #
 #      Written by Yohji Akama when he visited Math. Dept., Fudan University on 2019/11/28                         #
-# revised 2019/12/18 Wed #
+#      revised: 2019/12/18 Wed, 2020/2/5 Wed. 	    	   	 	       					  #
 #                                                                                                                 #
 ###################################################################################################################
 
 
-READ:
+###################################################################################################################
+#                                                                                                                 #
+#          SIMPLE, CONNECTED, PLANAR, POSITIVE CORNER CURVATURE EVERYWHERE GRAPHS                                 #
+#                                                                                                                 #
+###################################################################################################################
 
 PCnC_c2f5p_V_le_F_all_Annotated.txt : The enumeration of all the 13 2-connected simple spherical planar graphs (V,E,F) such that
 				the corner curvature is positive everywhere and #V <= #F. This is manually written.
 			    
-
-
-#########################################################################################################################################
-#                                                                                                                                       #
-#                     SIMPLE, CONNECTED, PLANAR, POSITIVE CORNER CURVATURE EVERYWHERE GRAPHS                                            #
-#                                                                                                                                       #
-#########################################################################################################################################
-
 PCnCvtx_13-16.txt : The outputs of PCnCvtx 13; PCnCvtx 14; PCnCvtx 15; PCnCvtx 16
 
-PCnC_c2f5p_AdjLists_V_le_F : In this folder, a file c2f5p_PCnC_v (4 <= v <= 12) contains all the adjacency lists of PCnC graphs of designated
+PCnC_c2f5p_AdjLists_V_le_F : In this folder, a file PCnC_c2f5p_v (4 <= v <= 12) contains all the adjacency lists of PCnC graphs of designated
 		        number of vertices.
 
 PCnC_c2f5p_V_le_F_all_Annotated.txt : The enumeration of all the 13 2-connected simple spherical planar graphs (V,E,F) such that
 				the corner curvature is positive everywhere and #V <= #F. This is manually written.
 			    
-PCnC_c2f5p_V_le_F_all.txt : The enumeration of adjacency lists in c2f5p_PCnC_v (4 <= v <= 12).
+PCnC_c2f5p_V_le_F_all.txt : The enumeration of adjacency lists in PCnC_c2f5p_v (4 <= v <= 12).
 
 PCnCvtx.c      : For a given number v of vertices, lists possible combinations of graph invariants of PCnC graphs (V,E,F) such that v = #V <= #F.
                 The comment of this files contains DEFINITION, LEMMA, and EXAMPLE which dispense the computation by plantriPCnC for
@@ -43,21 +39,21 @@ PCnCvtx.c      : For a given number v of vertices, lists possible combinations o
 plantriPCnC.c : For a given number v of vertices, generates connected simple spherical planar graphs (V,E,F) s.t. the corner curvature is positive
 	        everywhere and #V <= #F.
 		It runs on 
-Darwin ei.local 17.7.0 Darwin Kernel Version 17.7.0: Fri Oct  4 23:08:59 PDT 2019; root:xnu-4570.71.57~1/RELEASE_X86_64 x86_64.
-Probably on other unix.
+		   Darwin ei.local 17.7.0 Darwin Kernel Version 17.7.0: Fri Oct  4 23:08:59 PDT 2019; root:xnu-4570.71.57~1/RELEASE_X86_64 x86_64.
+		Probably it runs on other unix.
 
 
 
 
-#########################################################################################################################################
-#                                                                                                                                       #
-#                     SIMPLE, CONNECTED, PLANAR GRAPHS WITH EACH EDGE HAVING POSITIVE FORMAN CURVATURE                                  #
-#                                                                                                                                       #
-#########################################################################################################################################
+###################################################################################################################
+#                                                                                                                 #
+#          SIMPLE, CONNECTED, PLANAR GRAPHS WITH EACH EDGE HAVING POSITIVE FORMAN CURVATURE                       #
+#                                                                                                                 #
+###################################################################################################################
 
 
 InverseMedial-fig :
-This directory consists of all 116 MATLAB-fig files 
+This folder consists of all 116 MATLAB-fig files 
 (a) E<# of edges of G>_<count>V<# of vertices of G>Selfdual.fig,
 (b) E<# of edges of G>_<count>V<# of vertices of G>.fig, 
 (c) E<# of edges of G>_<count>V<# of vertices of G>dual.fig.
@@ -76,7 +72,7 @@ The embedding is MedialPFC_c3dq_all.txt.
 
 
 Medial-fig :
-This directory consists of all 73 files <# vertices of H>_<COUNT>.fig such that
+This folder consists of all 73 files <# vertices of H>_<COUNT>.fig such that
 (1) H is a simple, connected, planar, 4-regular graph
     where <# vertices of H> is the number of vertices of H, and is >=6 and <= 24;
     and each vertex type sums up to at most 15 in an embedding of G to the sphere.
@@ -94,7 +90,7 @@ The enumeration is ordered with v.
 
 
 InverseMedial :
-This directory consists of all the 73 files <# vertices of H>_<COUNT>.txt such that
+This folder consists of all the 73 files <# vertices of H>_<COUNT>.txt such that
 (1) H is a simple, connected, planar, 4-regular graph
     where the number of vertices of H is <# vertices of H>, and is >=6 and <= 24;
     and each vertex type sums up to at most 15.
@@ -113,7 +109,7 @@ Copy and paste this to a Maple worksheet file and execute the worksheet.
 InverseMedial-TeX :
 Each file contains Tikz commands to draw a Shlegel diagram of a PFC graph.
 It is generated partially from a line of a corresponding file in InverseMedial/ .
-Fill coordinates of vertices, and paste the file in PCnC_PFC.tex.
+Fill coordinates of vertices in each file.
 
 
 PFC.res		 :
@@ -134,22 +130,23 @@ The output of PFCvtx, ordered with f5. Some candidates are given.
 
 
 plantriPFC.c :
-For a given number v of vertices,  generates connected simple spherical planar quadrangulations of v vertices such that
+The source file of plantriPFC.
+For a given number v of vertices, plantriPFC generates connected simple spherical planar quadrangulations of v vertices such that
 the vertex type of the dual graph are 3335,3334,3333,3344,3345, or 3336. 
 For each graph, it also outputs an inverse medial graph and the dual to InverseMedial/<# of Edges>_<Count>.txt.
 It does not check whether they are isomorphic or not. A graph of fewer vertices comes first in the file.
 For detail, invoke plantriPFC --help.
 It runs on 
-Darwin ei.local 17.7.0 Darwin Kernel Version 17.7.0: Fri Oct  4 23:08:59 PDT 2019; root:xnu-4570.71.57~1/RELEASE_X86_64 x86_64.
-Probably on other unix.
+   Darwin ei.local 17.7.0 Darwin Kernel Version 17.7.0: Fri Oct  4 23:08:59 PDT 2019; root:xnu-4570.71.57~1/RELEASE_X86_64 x86_64.
+Probably it runs on other unix.
 
 
 
-#########################################################################################################################################
-#                                                                                                                                       #
-#                                              Miscellaneous                                                                            #
-#                                                                                                                                       #
-#########################################################################################################################################
+###################################################################################################################
+#                                                                                                                 #
+#                                   Miscellaneous                                                                 #
+#                                                                                                                 #
+###################################################################################################################
 
 
 00readme :
@@ -157,7 +154,7 @@ This file.
 
 makefile :
 A makefile for a command make -R.
-Don't for get the option '-R'. 
+Don't forget the option '-R'. 
 Without the option '-R', the implicit rule of the make directs gcc to compile files *.m.
 
 
@@ -166,16 +163,18 @@ tran*.cpp and the binaries.
 
 
 bin/tranAL.cpp :
-A C++ file.
-From stdin, it reads adjacent lists in ASCII format, and it outputs Maple commands which
+A C++ file for bin/tranAL.
+From stdin, tranAL reads adjacent lists in ASCII format, and it outputs Maple commands which
 contains the adjacency matrices, command to check the OP-, OR-, and/or graph-isomorphism.
 
 bin/translate.cpp :
-From stdin, it reads two adjacency lists of ASCII format. To stdout, it writes the following MATLAB-commands: if the two adjacency lists are for isomorphic graphs, then generates PDF/MATLAB-fig file of the graph; otherwise, generates PDF/MATLAB-fig files of the two graphs.
+A C++ file for bin/translate.
+From stdin, translate reads two adjacency lists of ASCII format. To stdout, it writes the following MATLAB-commands: if the two adjacency lists are for isomorphic graphs, then generates PDF/MATLAB-fig file of the graph; otherwise, generates PDF/MATLAB-fig files of the two graphs.
 For detail, invoke translate --help.
 
 
 bin/translateISO.cpp :
+A C++ file for bin/translateISO.
 From stdin, it reads two adjacency lists of ASCII format. To stdout, it writes MATLAB-commands that assign the two adjacency matrix to two variables. For detail, invoke translateISO --help
 
 
@@ -211,7 +210,7 @@ This MATLAB files generates the 73 MATLAB-fig files in Medial-fig.
 
 
 Manuscript:
-A directory for a paper "POSITIVE FORMAN-RICCI CURVATURE, POSITIVE CORNER CURVATURE, AND ENUMERATIONS OF QUARTIC GRAPHS."
+A folder for a paper "POSITIVE FORMAN-RICCI CURVATURE, POSITIVE CORNER CURVATURE, AND ENUMERATIONS OF QUARTIC GRAPHS."
 
 Manuscript/MedialImage:
-A directory for PDF files for Medial-fig.
+A folder for PDF files for Medial-fig.
