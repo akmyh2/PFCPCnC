@@ -146,6 +146,8 @@ Probably it runs on other unix.
 #                                                                                                                 #
 #                                   Miscellaneous                                                                 #
 #                                                                                                                 #
+#                                   Not uploaded at github.com/akm48/PFCPCnC                                      #
+#                                                                                                                 #
 ###################################################################################################################
 
 
@@ -158,6 +160,13 @@ Don't forget the option '-R'.
 Without the option '-R', the implicit rule of the make directs gcc to compile files *.m.
 
 
+###################################################################################################################
+#                                                                                                                 #
+#                                   Miscellaneous programs                                                        #
+#                                                                                                                 #
+###################################################################################################################
+
+
 bin:
 tran*.cpp and the binaries.
 
@@ -166,6 +175,7 @@ bin/tranAL.cpp :
 A C++ file for bin/tranAL.
 From stdin, tranAL reads adjacent lists in ASCII format, and it outputs Maple commands which
 contains the adjacency matrices, command to check the OP-, OR-, and/or graph-isomorphism.
+
 
 bin/translate.cpp :
 A C++ file for bin/translate.
@@ -181,13 +191,12 @@ From stdin, it reads two adjacency lists of ASCII format. To stdout, it writes M
 
 InverseMedialOPOR.txt:
 Maple command.
-For each file in InverseMeridia, we check whether the two adjacent lists in the file is OP-, OR-, or
+For each file in a folder InverseMedial, we check whether the two adjacent lists in the file is OP-, OR-, or
 graph-isomorphic.
 
 
 OPOR.mw :
 A Maple worksheet to which I pasted InverseMedialCnnctvtyAtMost2.txt and InverseMedialOPOR.txt.
-
 
 
 
@@ -210,7 +219,5 @@ This MATLAB files generates the 73 MATLAB-fig files in Medial-fig.
 
 
 Manuscript:
-A folder for a paper "POSITIVE FORMAN-RICCI CURVATURE, POSITIVE CORNER CURVATURE, AND ENUMERATIONS OF QUARTIC GRAPHS."
+A folder for a paper 
 
-Manuscript/MedialImage:
-A folder for PDF files for Medial-fig.
