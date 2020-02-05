@@ -8,6 +8,7 @@
 #      BY USING MATLAB.                                                                                           #
 #                                                                                                                 #
 #      Written by Yohji Akama when he visited Math. Dept., Fudan University on 2019/11/28                         #
+# revised 2019/12/18 Wed #
 #                                                                                                                 #
 ###################################################################################################################
 
@@ -17,13 +18,6 @@ READ:
 PCnC_c2f5p_V_le_F_all_Annotated.txt : The enumeration of all the 13 2-connected simple spherical planar graphs (V,E,F) such that
 				the corner curvature is positive everywhere and #V <= #F. This is manually written.
 			    
-
-PFC_c2dq_all.txt : The enumeration of all the 72 connected simple planar 4-regular graphs
-		   such that the number of vertices is v, Forman curvature is positive everywhere,
-		   and the vertex type is 3335,3334,3333,3344, or 3345. (6 <= v <= 24).
-
-
-PCnC.mw : A Maple worksheet that proves: If the corner curvature is positive for every corner, then the number of vertices or the number of faces is at most 12
 
 
 #########################################################################################################################################
@@ -48,6 +42,9 @@ PCnCvtx.c      : For a given number v of vertices, lists possible combinations o
 		
 plantriPCnC.c : For a given number v of vertices, generates connected simple spherical planar graphs (V,E,F) s.t. the corner curvature is positive
 	        everywhere and #V <= #F.
+		It runs on 
+Darwin ei.local 17.7.0 Darwin Kernel Version 17.7.0: Fri Oct  4 23:08:59 PDT 2019; root:xnu-4570.71.57~1/RELEASE_X86_64 x86_64.
+Probably on other unix.
 
 
 
@@ -59,7 +56,7 @@ plantriPCnC.c : For a given number v of vertices, generates connected simple sph
 #########################################################################################################################################
 
 
-InverseMeridian-fig :
+InverseMedial-fig :
 This directory consists of all 116 MATLAB-fig files 
 (a) E<# of edges of G>_<count>V<# of vertices of G>Selfdual.fig,
 (b) E<# of edges of G>_<count>V<# of vertices of G>.fig, 
@@ -68,40 +65,55 @@ such that
 (1) G is a simple, connected, planar, graph where
     <# edges of G>  is the number of edges of G, and is >=6 and <= 24;
     <# vertices of G>  is the number of vertices of G;
-    and each edge has positive Forman curvature.
+    and each edge has positive Forman curvature in an embedding of G to the sphere.
+    The embedding is InverseMedial/<# of edges of G>_<count>.txt .
 (2) <COUNT> is the numbering among such H=m(G).
     The numbering changes for nonisomorphic H's.
-(3) (a) is for self-dual G.  (b) and (c) are for non-self-dual, and are dual to each other.
+(3) In case (a), G is a graph-isomorphic to its dual G*.
+    Graph (b) is not a graph isomorphic to dual graph (c) of (b).
+The embedding is MedialPFC_c3dq_all.txt. 
 
 
 
-Meridian-fig :
+Medial-fig :
 This directory consists of all 73 files <# vertices of H>_<COUNT>.fig such that
 (1) H is a simple, connected, planar, 4-regular graph
     where <# vertices of H> is the number of vertices of H, and is >=6 and <= 24;
-    and each vertex type sums up to at most 15.
+    and each vertex type sums up to at most 15 in an embedding of G to the sphere.
+    The embedding is by MedialPFC_c3dq_all.txt.
 (2) <COUNT> is the numbering among such H where the number of vertices of H is <# vertices of H>.
     The numbering changes for nonisomorphic H's.
 Each file is an MATLAB-fig file to draw H.
 
 
-MeridianPFC_c2dq_all.txt :
+PFC_c3dq_all.txt :
 This file consists of 73 adjacency lists.
-They represent all the 73 connected simple planar 4-regular graphs H such that
+They represent all the 73 3-connected simple planar 4-regular graphs H such that
 (i) the number v of vertices is >=6 and <=24 and (ii) each vertex type sums up to at most 15. 
 The enumeration is ordered with v.
 
 
-InverseMeridian :
+InverseMedial :
 This directory consists of all the 73 files <# vertices of H>_<COUNT>.txt such that
 (1) H is a simple, connected, planar, 4-regular graph
     where the number of vertices of H is <# vertices of H>, and is >=6 and <= 24;
     and each vertex type sums up to at most 15.
 (2) <COUNT> is the numbering among such H where the number of vertices of H is <# vertices of H>.
     The numbering changes for nonisomorphic H's.
-Each file consists of an inverse meridian graph G of H and the dual of G.
+Each file consists of an inverse medial graph G of H and the dual G* of G.
+A graph of fewer vertices comes first in the file.
+G and G* may be isomorphic.
 
 
+InverseMedialCnnctvtyAtMost2.txt :
+Maple commands to list all the inverse medial graphs of vertex connectivity at most 2.
+Copy and paste this to a Maple worksheet file and execute the worksheet.
+
+
+InverseMedial-TeX :
+Each file contains Tikz commands to draw a Shlegel diagram of a PFC graph.
+It is generated partially from a line of a corresponding file in InverseMedial/ .
+Fill coordinates of vertices, and paste the file in PCnC_PFC.tex.
 
 
 PFC.res		 :
@@ -120,11 +132,16 @@ PFCs.5gon	 :
 The output of PFCvtx, ordered with f5. Some candidates are given.
 
 
-plantriMeridianPFC.c :
+
+plantriPFC.c :
 For a given number v of vertices,  generates connected simple spherical planar quadrangulations of v vertices such that
 the vertex type of the dual graph are 3335,3334,3333,3344,3345, or 3336. 
-For each graph, it generates also an inverse meridian graphs and the dual. It does not check whether they are isomorphic or not.
-For detail, invoke plantriMeridianPFC --help.
+For each graph, it also outputs an inverse medial graph and the dual to InverseMedial/<# of Edges>_<Count>.txt.
+It does not check whether they are isomorphic or not. A graph of fewer vertices comes first in the file.
+For detail, invoke plantriPFC --help.
+It runs on 
+Darwin ei.local 17.7.0 Darwin Kernel Version 17.7.0: Fri Oct  4 23:08:59 PDT 2019; root:xnu-4570.71.57~1/RELEASE_X86_64 x86_64.
+Probably on other unix.
 
 
 
@@ -139,29 +156,62 @@ For detail, invoke plantriMeridianPFC --help.
 This file.
 
 makefile :
-For make command
+A makefile for a command make -R.
+Don't for get the option '-R'. 
+Without the option '-R', the implicit rule of the make directs gcc to compile files *.m.
 
 
-InverseMeridianISO.m :
-A MATLAB files that verifies the 116 graphs in InverseMeridian-fig are indeed mutuall non-isomorphic.
+bin:
+tran*.cpp and the binaries.
 
 
-InverseMeridian.m :
-From 73 files in InverseMeridian, this MATLAB files  generates the 116 MATLAB-fig files in InverseMeridian-fig.
+bin/tranAL.cpp :
+A C++ file.
+From stdin, it reads adjacent lists in ASCII format, and it outputs Maple commands which
+contains the adjacency matrices, command to check the OP-, OR-, and/or graph-isomorphism.
 
-
-
-
-Meridian.m :
-From MeridianPFC_c2dq_all.txt, this MATLAB files generates the 73 MATLAB-fig files in Meridian-fig.
-
-
-translate.cpp :
+bin/translate.cpp :
 From stdin, it reads two adjacency lists of ASCII format. To stdout, it writes the following MATLAB-commands: if the two adjacency lists are for isomorphic graphs, then generates PDF/MATLAB-fig file of the graph; otherwise, generates PDF/MATLAB-fig files of the two graphs.
 For detail, invoke translate --help.
 
 
-translateISO.cpp :
-From stdin, it reads two adjacency lists of ASCII format. To stdout, it writes MATLAB-commands that asign the two adjacency matrix to two variables. For detail, invoke translateISO --help
+bin/translateISO.cpp :
+From stdin, it reads two adjacency lists of ASCII format. To stdout, it writes MATLAB-commands that assign the two adjacency matrix to two variables. For detail, invoke translateISO --help
 
 
+
+InverseMedialOPOR.txt:
+Maple command.
+For each file in InverseMeridia, we check whether the two adjacent lists in the file is OP-, OR-, or
+graph-isomorphic.
+
+
+OPOR.mw :
+A Maple worksheet to which I pasted InverseMedialCnnctvtyAtMost2.txt and InverseMedialOPOR.txt.
+
+
+
+
+InverseMedialISO.m :
+A MATLAB files that verifies the 116 graphs in InverseMedial-fig are indeed non-isomorphic.
+AN ISOMORPHISM HERE IS A GRAPH ISOMORPHISM. IT IS NOT APPROPRIATE.
+OUR ISOMORPHISM SHOULD BE AN ORDER-PRESERVING OR ORDER-REVERSING GRAPH ISOMORPHISM.
+
+
+InverseMedial.m :
+A MATLAB file generated from PFC_c3dq_all.txt by bin/translate.
+From 73 files in InverseMedial, this MATLAB files  generates the 116 MATLAB-fig files in InverseMedial-fig.
+
+
+
+Medial.m :
+MATLAB file generated from PFC_c3dq_all.txt by bin/tran.
+This MATLAB files generates the 73 MATLAB-fig files in Medial-fig.
+
+
+
+Manuscript:
+A directory for a paper "POSITIVE FORMAN-RICCI CURVATURE, POSITIVE CORNER CURVATURE, AND ENUMERATIONS OF QUARTIC GRAPHS."
+
+Manuscript/MedialImage:
+A directory for PDF files for Medial-fig.
