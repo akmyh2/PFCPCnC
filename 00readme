@@ -19,28 +19,43 @@
 #                                                                                                                 #
 ###################################################################################################################
 
-PCnC_c2f5p_V_le_F_all_Annotated.txt : The enumeration of all the 13 2-connected simple spherical planar graphs (V,E,F) such that
-				the corner curvature is positive everywhere and #V <= #F. This is manually written.
+PCnC_c2f5p_V_le_F_all_Annotated.txt :
+The enumeration of all the 13 2-connected simple spherical planar graphs (V,E,F) such that
+the corner curvature is positive everywhere and #V <= #F. This is manually written.
 			    
-PCnCvtx_13-16.txt : The outputs of PCnCvtx 13; PCnCvtx 14; PCnCvtx 15; PCnCvtx 16
 
-PCnC_c2f5p_AdjLists_V_le_F : In this folder, a file PCnC_c2f5p_v (4 <= v <= 12) contains all the adjacency lists of PCnC graphs of designated
-		        number of vertices.
+PCnCvtx_13-16.txt :
+The outputs of PCnCvtx 13; PCnCvtx 14; PCnCvtx 15; PCnCvtx 16
 
-PCnC_c2f5p_V_le_F_all_Annotated.txt : The enumeration of all the 13 2-connected simple spherical planar graphs (V,E,F) such that
-				the corner curvature is positive everywhere and #V <= #F. This is manually written.
-			    
-PCnC_c2f5p_V_le_F_all.txt : The enumeration of adjacency lists in PCnC_c2f5p_v (4 <= v <= 12).
 
-PCnCvtx.c      : For a given number v of vertices, lists possible combinations of graph invariants of PCnC graphs (V,E,F) such that v = #V <= #F.
-                The comment of this files contains DEFINITION, LEMMA, and EXAMPLE which dispense the computation by plantriPCnC for
-		v-vertex cases (v >= 13).
+PCnC_c2f5p_AdjLists_V_le_F :
+In this folder, a file PCnC_c2f5p_v (4 <= v <= 12) contains all the adjacency lists of PCnC graphs of designated number of vertices.
+
+
+PCnC_c2f5p_V_le_F_all_Annotated.txt :
+The enumeration of all the 13 2-connected simple spherical planar graphs (V,E,F) such that
+the corner curvature is positive everywhere and #V <= #F. This is manually written.
+
+
+PCnC_c2f5p_V_le_F_all.txt :
+The enumeration of adjacency lists in PCnC_c2f5p_v (4 <= v <= 12).
+
+
+PCnCvtx.c      :
+For a given number v of vertices, lists possible combinations of graph invariants of PCnC graphs (V,E,F) such that v = #V <= #F.
+The comment of this files contains DEFINITION, LEMMA, and EXAMPLE which dispense the computation by plantriPCnC for v-vertex cases (v >= 13).
+
+
+plantri-guide.txt:
+Brinkmann, G., McKay, B.: Guide to using plantri (version 5.0) (2016). URL http://cs.anu.edu.au/~bdm/plantri. Accessed on 17 January 2020
+
 		
-plantriPCnC.c : For a given number v of vertices, generates connected simple spherical planar graphs (V,E,F) s.t. the corner curvature is positive
-	        everywhere and #V <= #F.
-		It runs on 
-		   Darwin ei.local 17.7.0 Darwin Kernel Version 17.7.0: Fri Oct  4 23:08:59 PDT 2019; root:xnu-4570.71.57~1/RELEASE_X86_64 x86_64.
-		Probably it runs on other unix.
+plantriPCnC.c :
+The source file of plantriPCnC. It is a customization of plantri.c version 5.0
+For a given number v of vertices, generates connected simple spherical planar graphs (V,E,F) s.t. the corner curvature is positive everywhere and #V <= #F.
+It runs on 
+   Darwin ei.local 17.7.0 Darwin Kernel Version 17.7.0: Fri Oct  4 23:08:59 PDT 2019; root:xnu-4570.71.57~1/RELEASE_X86_64 x86_64.
+Probably it runs on other unix.
 
 
 
