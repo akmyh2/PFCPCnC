@@ -51,7 +51,7 @@ Brinkmann, G., McKay, B.: Guide to using plantri (version 5.0) (2016). URL http:
 
 		
 plantriPCnC.c :
-The source file of plantriPCnC. It is a customization of plantri.c version 5.0
+The source file of plantriPCnC. It is a customization of plantri.c (version 5.0).
 For a given number v of vertices, generates connected simple spherical planar graphs (V,E,F) s.t. the corner curvature is positive everywhere and #V <= #F.
 It runs on 
    Darwin ei.local 17.7.0 Darwin Kernel Version 17.7.0: Fri Oct  4 23:08:59 PDT 2019; root:xnu-4570.71.57~1/RELEASE_X86_64 x86_64.
